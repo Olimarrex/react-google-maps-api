@@ -99,7 +99,7 @@ const defaultOptions = {}
 
 export interface MarkerClustererProps {
   // required
-  children: (markerClusterer: Clusterer) => JSX.Element
+  children: (markerClusterer: Clusterer) => JSX.Element | JSX.Element[]
 
   options?: ClustererOptions | undefined
   /** Whether the position of a cluster marker should be the average position of all markers in the cluster. If set to false, the cluster marker is positioned at the location of the first marker added to the cluster. The default value is false. */
